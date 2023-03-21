@@ -1,0 +1,96 @@
+$purple : #610061;
+
+* {
+    font-family: 'Nunito', sans-serif;
+}
+
+body {
+    background-image: url("/img/hunter/fond.png");
+    display: flex;
+    justify-content: center;
+}
+
+h1 {
+    font-family: 'Luckiest Guy';
+    display: none;
+    color: $purple;
+}
+
+h2 {
+    font-family: 'Luckiest Guy';
+    color: $purple;
+}
+
+.site_container {
+    max-width: 750px;
+    height: 100%;
+    width: 100%;
+    background-color: white;
+    margin-bottom: 100px;
+}
+
+header {
+    height: 150px;
+    background-color: $purple;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    img {
+        height: 70%;
+        margin-left: 5%;
+    }
+
+    nav {
+        display: flex;
+        flex-direction: row;
+        width: 50%;
+
+        p {
+            width: 33%;
+            font-family: 'Luckiest Guy';
+            color: white;
+            text-transform: uppercase;
+        }
+    }
+}
+
+main {
+    padding: 0 35px 35px 35px;
+    height: 100%;
+
+    section {
+
+        h2 {
+            margin-top: 15px;
+            margin-bottom: 15px;
+
+        }
+
+        h2 img {
+            height: 25px;
+        }
+
+        img {
+            float: left;
+            height: 110px;
+            margin: 10px;
+            margin-top: 0;
+        }
+
+        button {
+            background-color: $purple;
+            border: none;
+            color: white;
+            height: 30px;
+            width: 80px;
+            position: relative;
+            left: 85%;
+        }
+
+        ul {
+            margin-top: 15px;
+            margin-left: 45px;
+        }
+    }
+}
