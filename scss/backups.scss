@@ -1,0 +1,215 @@
+* {
+    font-family: 'Baloo Chettan 2', cursive;
+    font-size: 1em;
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+h1 {
+    font-family: 'Comic Neue', cursive;
+}
+
+h2 {
+    font-family: 'Comic Neue', cursive;
+}
+
+h3 {
+    font-family: 'Comic Neue', cursive;
+}
+
+
+.site_backups_container {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 50px;
+
+    header {
+        background-color: rgb(255, 136, 0);
+        border-bottom: 5px solid orange;
+        border-top: 5px solid orange;
+        height: 170px;
+        width: 100%;
+        color: white;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+
+        img {
+            height: 150px;
+            width: 70px;
+            margin-top: -40px;
+        }
+
+        nav {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 33%;
+
+            p {
+                margin-right: 10px;
+            }
+        }
+    }
+
+    main {
+        max-width: 1100px;
+        text-align: center;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+
+        .everywhere_section {
+            max-width: 800px;
+
+            h1 {
+                font-size: 2.5em;
+                margin-top: 35px;
+                margin-bottom: 10px;
+            }
+
+            p {
+                margin-top: 15px;
+            }
+        }
+
+        .bottom_main_container {
+            display: flex;
+            justify-content: space-between;
+            margin-bottom: 50px;
+
+            .no_backup_container {
+                background-color: rgb(228, 228, 228);
+                width: 65%;
+
+                h2 {
+                    font-size: 3.5em;
+                    text-transform: uppercase;
+                }
+
+                span {
+                    color: rgb(255, 136, 0);
+                    font-weight: 500;
+                }
+
+                .article_container {
+                    display: flex;
+                    justify-content: space-evenly;
+                    text-align: start;
+
+                    article {
+                        width: 45%;
+
+                        div {
+                            display: flex;
+                            justify-content: center;
+
+                            h3 {
+                                font-size: 1.8em;
+                                text-align: center;
+                                margin-bottom: 10px;
+                            }
+
+                            .svg {
+                                height: 25px;
+                                width: 25px;
+                                float: none;
+                                padding: 0;
+                                border-radius: 0;
+                            }
+                        }
+
+                        p {
+                            margin: 0 0 20px 0;
+                        }
+
+                        img {
+                            float: left;
+                            width: 200px;
+                            border-radius: 25px;
+                            padding-right: 15px;
+                        }
+
+                        ul {
+                            margin-bottom: 20px;
+                            padding-left: 15px;
+                        }
+
+                        .button {
+                            justify-content: end;
+
+                            div {
+
+                                padding: 10px;
+                                height: 20px;
+                                width: 130px;
+                                background-color: rgb(73, 73, 73);
+                                color: white;
+                            }
+
+
+                            img {
+                                height: 20px;
+                                width: 20px;
+                                margin-left: 10px;
+                            }
+                        }
+                    }
+                }
+            }
+
+            .data_section {
+                background-color: rgb(255, 136, 0);
+                border: 5px solid orange;
+                width: 30%;
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+                text-align: start;
+
+                h2 {
+                    font-size: 2em;
+                    margin-bottom: 20px;
+                    margin-top: 20px;
+
+                    span {
+                        color: white;
+                        text-transform: uppercase;
+                        font-weight: normal;
+                    }
+                }
+
+                article {
+                    margin-bottom: 25px;
+                    width: 90%;
+                }
+
+                div {
+                    display: flex;
+                }
+
+                h3 {
+                    font-size: 1.5em;
+                    margin-bottom: 5px;
+
+
+                }
+
+                p {
+                    color: white;
+                }
+
+                img {
+                    height: 25px;
+                    margin-right: 10px;
+                }
+            }
+        }
+    }
+}
