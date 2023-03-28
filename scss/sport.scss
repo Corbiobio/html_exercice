@@ -1,0 +1,180 @@
+* {
+    // font-family: 'Coda Caption', sans-serif;
+    // font-family: 'Norican', cursive;
+    font-family: 'PT Sans', sans-serif;
+}
+
+header {
+    background-image: url("/img/sport/fond.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    width: 100%;
+
+    nav {
+        font-family: 'Norican', cursive;
+        background-color: rgba(0, 0, 0, 0.432);
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 100px;
+
+        div {
+            width: 20%;
+            height: 75%;
+            display: flex;
+            flex-direction: column;
+            justify-content: space-around;
+            text-align: center;
+            color: white;
+
+            p {
+                font-family: 'Norican', cursive;
+                font-size: 30px;
+            }
+
+            img {
+                height: 30px;
+            }
+        }
+    }
+
+    .promo_header {
+        background-color: rgba(255, 255, 255, 0.274);
+        text-align: center;
+
+        p {
+            font-family: 'Coda Caption', sans-serif;
+            text-transform: uppercase;
+            font-weight: bold;
+            font-size: 30px;
+        }
+
+        span {
+            color: white;
+            font-family: 'Coda Caption', sans-serif;
+        }
+    }
+
+    section {
+        height: 600px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+
+        h1 {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            color: orange;
+            font-family: 'Coda Caption', sans-serif;
+            font-size: 55px;
+            text-shadow: 0px 0px 8px #000000;
+
+            span {
+                transform: translateY(-57%);
+                font-family: 'Norican', cursive;
+                color: white;
+                font-weight: normal;
+            }
+        }
+    }
+}
+
+main {
+    background-color: #00859c;
+    display: flex;
+    flex-direction: column;
+
+
+    section {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        padding-left: 75px;
+        padding-right: 75px;
+        color: white;
+
+        h2 {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            color: orange;
+            font-family: 'Coda Caption', sans-serif;
+            font-size: 55px;
+            text-shadow: 0px 0px 8px #000000;
+            margin-top: 50px;
+
+            span {
+                transform: translateY(-57%);
+                font-family: 'Norican', cursive;
+                color: white;
+                font-weight: normal;
+            }
+        }
+
+        iframe {
+            width: 100%;
+            height: 500px;
+        }
+    }
+
+    .article {
+        img {
+            float: left;
+            height: 150px;
+            padding-right: 25px;
+            padding-bottom: 50px;
+        }
+
+        p {
+            line-height: 30px;
+        }
+    }
+
+    hr {
+        width: 90%;
+        margin: auto
+    }
+
+    .vieux_lyon_section {
+        img {
+            float: right;
+        }
+    }
+
+    .temoignages {
+        background: rgb(0, 0, 0);
+        background: linear-gradient(43deg, rgba(0, 0, 0, 1) 0%, rgba(0, 36, 42, 1) 19%, rgba(0, 88, 103, 1) 53%, rgba(0, 133, 156, 1) 100%);
+        padding-bottom: 100px;
+
+        div {
+            display: flex;
+            flex-direction: row;
+            justify-content: space-between;
+
+            article {
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+                width: 30%;
+                text-align: center;
+
+                h3 {
+                    font-family: "Norican", cursive;
+                    text-shadow: 0px 0px 8px #000000;
+                    font-size: 30px;
+                }
+
+                img {
+                    padding: 20px;
+                    width: 200px;
+                }
+            }
+        }
+    }
+}
+
+footer {
+    background-color: white;
+    height: 150px;
+}
