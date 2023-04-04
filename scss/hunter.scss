@@ -7,7 +7,8 @@ $purple : #610061;
 body {
     background-image: url("/img/hunter/fond.png");
     display: flex;
-    justify-content: center;
+    align-items: center;
+    flex-direction: column;
 }
 
 h1 {
@@ -21,16 +22,11 @@ h2 {
     color: $purple;
 }
 
-.site_hunter_container {
-    max-width: 750px;
-    height: 100%;
-    width: 100%;
-    background-color: white;
-    margin-bottom: 100px;
-}
-
 header {
+    max-width: 750px;
     height: 150px;
+    width: 100%;
+    padding: 0 35px;
     background-color: $purple;
     display: flex;
     align-items: center;
@@ -58,6 +54,8 @@ header {
 main {
     padding: 0 35px 35px 35px;
     height: 100%;
+    max-width: 750px;
+    background-color: white;
 
     section {
 

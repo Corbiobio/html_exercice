@@ -36,7 +36,16 @@ body {
     background-color: grey;
     display: flex;
     flex-direction: column;
+    justify-content: center;
     align-items: center;
+}
+
+header {
+    max-width: 800px;
+}
+
+main {
+    max-width: 800px;
 }
 
 .cat_god {
@@ -47,7 +56,6 @@ body {
 }
 
 .site_cat_container {
-    max-width: 800px;
     display: flex;
     flex-direction: column;
 }
