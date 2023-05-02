@@ -1,0 +1,152 @@
+$sky_blue: #28DBDB;
+$blue: #15036E;
+$pink: #FF2E6C;
+
+* {
+    font-family: 'Londrina Solid', cursive;
+}
+
+header {
+    nav {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+
+        .gif {
+            margin: 10px 0;
+        }
+
+        img {
+            width: 75px;
+            height: 75px;
+        }
+
+        ul {
+            list-style: none;
+
+            li {
+                display: flex;
+                flex-direction: column;
+                text-align: center;
+                margin: 15px 0;
+
+                img {
+                    height: 40px;
+                    width: 100%;
+                    filter: brightness(0) saturate(100%) invert(82%) sepia(76%) saturate(1386%) hue-rotate(123deg) brightness(93%) contrast(84%);
+                }
+
+                a {
+                    text-decoration: none;
+                    text-transform: uppercase;
+                    font-weight: bold;
+                    color: $blue;
+                    margin-top: 5px;
+                    font-size: 18px;
+                }
+            }
+        }
+    }
+
+    div {
+        width: 100%;
+        height: 60px;
+        display: flex;
+    }
+
+    div :nth-child(1) {
+        width: 90%;
+        border: none;
+        background-color: $pink ;
+        color: white;
+
+    }
+
+    div :nth-child(1)::placeholder {
+        color: #f18eab;
+        font-size: 26px;
+        font-family: Arial, Helvetica, sans-serif;
+        text-transform: uppercase;
+        text-align: center;
+    }
+
+    div :nth-child(2) {
+        width: 10%;
+        border: none;
+        background-color: $sky_blue;
+        font-size: 18px;
+        font-family: Arial, Helvetica, sans-serif;
+        text-transform: uppercase;
+        text-align: center;
+    }
+}
+
+main {
+    padding: 75px;
+
+    p {
+        color: $pink;
+        font-weight: lighter;
+        text-transform: uppercase;
+
+        span {
+            font-weight: bold;
+            color: $blue;
+        }
+    }
+
+    h2 {
+        color: $blue;
+        border: $sky_blue dashed 3px;
+        border-bottom: none;
+        text-align: center;
+        text-transform: uppercase;
+        padding: 35px 0;
+        width: 100%;
+    }
+
+    img {
+        filter: brightness(0) saturate(100%) invert(43%) sepia(81%) saturate(5615%) hue-rotate(325deg) brightness(104%) contrast(104%);
+        width: 30px;
+    }
+
+    div {
+        display: flex;
+        flex-direction: column;
+        flex-wrap: wrap;
+        align-content: center;
+        text-align: center;
+        margin: 15px 0;
+
+        div {
+            padding: 5px 0;
+            width: 100%;
+            border-bottom: $pink dashed 1px;
+        }
+    }
+}
+
+footer {
+    background-color: $blue;
+    padding: 30px 20px;
+
+    nav {
+        ul {
+            list-style: none;
+            display: flex;
+            justify-content: space-evenly;
+
+            li {
+                a {
+                    text-decoration: none;
+                    text-transform: uppercase;
+                    font-weight: bold;
+                    color: white;
+                    margin-top: 5px;
+                    font-size: 18px;
+                    font-weight: normal;
+                }
+            }
+        }
+    }
+}
