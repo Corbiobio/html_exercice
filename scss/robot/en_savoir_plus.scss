@@ -84,16 +84,6 @@ header {
 main {
     padding: 75px;
 
-    p {
-        color: $pink;
-        font-weight: lighter;
-        text-transform: uppercase;
-
-        span {
-            font-weight: bold;
-            color: $blue;
-        }
-    }
 
     h2 {
         color: $blue;
@@ -105,23 +95,34 @@ main {
         width: 100%;
     }
 
-    img {
-        filter: brightness(0) saturate(100%) invert(43%) sepia(81%) saturate(5615%) hue-rotate(325deg) brightness(104%) contrast(104%);
-        width: 30px;
-    }
-
     div {
-        display: flex;
-        flex-direction: column;
-        flex-wrap: wrap;
-        align-content: center;
-        text-align: center;
-        margin: 15px 0;
-
         div {
-            padding: 5px 0;
-            width: 100%;
-            border-bottom: $pink dashed 1px;
+            margin: 15px 0;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+
+            img {
+                filter: brightness(0) saturate(100%) invert(43%) sepia(81%) saturate(5615%) hue-rotate(325deg) brightness(104%) contrast(104%);
+                width: 30px;
+                height: 30px;
+                padding: 10px 0;
+            }
+
+            p {
+                width: 100%;
+                text-align: center;
+                color: $pink;
+                font-weight: lighter;
+                text-transform: uppercase;
+                border-top: $pink dashed 1px;
+                padding: 5px 0;
+
+                span {
+                    font-weight: bold;
+                    color: $blue;
+                }
+            }
         }
     }
 }
@@ -147,6 +148,46 @@ footer {
                     font-weight: normal;
                 }
             }
+        }
+    }
+}
+
+@media screen and (min-width:1200px) {
+    header {
+        nav {
+            flex-direction: row;
+
+            .gif {
+                margin-left: 50px;
+            }
+
+            ul {
+                display: flex;
+                width: 100%;
+                flex-direction: row;
+                justify-content: space-evenly;
+            }
+        }
+
+        section {
+            height: 600px;
+            justify-content: center;
+        }
+
+        div :nth-child(1) {
+            width: 95%;
+        }
+
+        div :nth-child(2) {
+            width: 5%;
+        }
+    }
+
+    main {
+        div {
+            display: flex;
+            width: 100%;
+            padding: 0 20px;
         }
     }
 }

@@ -170,3 +170,61 @@ footer {
         }
     }
 }
+
+@media screen and (min-width:1200px) {
+    header {
+        nav {
+            flex-direction: row;
+
+            .gif {
+                margin-left: 50px;
+            }
+
+            ul {
+                display: flex;
+                width: 100%;
+                flex-direction: row;
+                justify-content: space-evenly;
+            }
+        }
+
+        section {
+            height: 600px;
+            justify-content: center;
+        }
+
+        div :nth-child(1) {
+            width: 95%;
+        }
+
+        div :nth-child(2) {
+            width: 5%;
+        }
+    }
+
+    main {
+        section:nth-child(1) {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+
+            h2 {
+                width: 100%;
+                display: block;
+            }
+
+            img {
+                width: 70%;
+            }
+        }
+
+        section:nth-child(2n) {
+            display: flex;
+            justify-content: space-between;
+
+            article {
+                width: 30%;
+            }
+        }
+    }
+}

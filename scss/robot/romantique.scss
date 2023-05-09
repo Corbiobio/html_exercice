@@ -83,10 +83,6 @@ header {
 
 main {
     padding: 75px;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    text-align: center;
     color: $blue;
     font-weight: 100;
 
@@ -110,40 +106,43 @@ main {
 
     section {
         width: 100%;
-        border: $sky_blue 1px dashed;
-        padding: 10px;
-        margin-bottom: 30px;
 
-        h2 {
-            color: white;
-            background-color: $sky_blue;
-            border: none;
-            font-weight: normal;
-        }
+        article {
+            border: $sky_blue 1px dashed;
+            padding: 10px;
+            margin-bottom: 30px;
 
-        li {
-            list-style-type: circle;
-            margin: 10px 0 10px 20px;
-            color: $blue;
-            font-weight: 100;
-        }
+            h2 {
+                color: white;
+                background-color: $sky_blue;
+                border: none;
+                font-weight: normal;
+            }
 
-        strong {
-            color: $blue;
-            text-align: center;
-            display: block;
-            margin: 15px 0;
-            text-transform: uppercase;
-        }
+            li {
+                list-style-type: circle;
+                margin: 10px 0 10px 20px;
+                color: $blue;
+                font-weight: 100;
+            }
 
-        button {
-            background-color: $pink;
-            border: none;
-            width: 100%;
-            padding: 20px;
-            color: white;
-            font-weight: 100;
-            text-transform: uppercase;
+            strong {
+                color: $blue;
+                text-align: center;
+                display: block;
+                margin: 15px 0;
+                text-transform: uppercase;
+            }
+
+            button {
+                background-color: $pink;
+                border: none;
+                width: 100%;
+                padding: 20px;
+                color: white;
+                font-weight: 100;
+                text-transform: uppercase;
+            }
         }
     }
 }
@@ -170,6 +169,64 @@ footer {
                 }
             }
 
+        }
+    }
+}
+
+@media screen and (min-width:1200px) {
+    header {
+        nav {
+            flex-direction: row;
+
+            .gif {
+                margin-left: 50px;
+            }
+
+            ul {
+                display: flex;
+                width: 100%;
+                flex-direction: row;
+                justify-content: space-evenly;
+            }
+        }
+
+        section {
+            height: 600px;
+            justify-content: center;
+        }
+
+        div :nth-child(1) {
+            width: 95%;
+        }
+
+        div :nth-child(2) {
+            width: 5%;
+        }
+    }
+
+    main {
+        section:nth-child(1) {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+
+            h2 {
+                width: 100%;
+                display: block;
+            }
+        }
+
+        section:nth-child(2n) {
+            display: flex;
+            justify-content: space-between;
+
+            article {
+                width: 30%;
+
+                strong {
+                    margin: 25px 0;
+                }
+            }
         }
     }
 }
