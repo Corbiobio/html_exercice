@@ -1,0 +1,68 @@
+body {
+    height: 2000px;
+}
+
+.parallax_container {
+    width: 100%;
+    height: 1000px;
+    background: rgb(255, 20, 20);
+    background: linear-gradient(180deg, rgba(255, 20, 20, 1) 0%, rgba(9, 121, 56, 1) 73%, rgba(0, 212, 255, 1) 100%);
+    margin-top: 800px;
+
+    .parallax {
+        padding: 0 20%;
+        width: 100%;
+        height: 100%;
+        background-image: url(/img/chat/longcat.jpg);
+        background-attachment: fixed;
+        background-position: top;
+        background-repeat: no-repeat;
+        background-size: 65% 100vh;
+    }
+}
+
+.scrollspy_container {
+    margin: 100px 40px 50px 40px;
+    width: auto;
+    height: 500px;
+    border: 5px solid black;
+    overflow: auto;
+    padding: 20px;
+
+    .square {
+        width: 200px;
+        height: 7000000px;
+        animation: colorRotate 6s linear 0s infinite;
+        position: sticky;
+        top: 50px;
+        margin: 0 auto;
+        opacity: 0;
+    }
+}
+
+
+footer {
+    height: 100px;
+}
+
+@keyframes colorRotate {
+    from {
+        background-color: #6666ff;
+    }
+
+    10% {
+        background-color: #0099ff;
+    }
+
+    50% {
+        background-color: #00ff00;
+    }
+
+    75% {
+        background-color: #ff3399;
+    }
+
+    100% {
+        background-color: #6666ff;
+    }
+}
